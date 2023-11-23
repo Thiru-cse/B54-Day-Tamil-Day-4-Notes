@@ -1,0 +1,53 @@
+Roadmap session - Day4 - JS Functions :
+
+Functions :
+--> to perform a particular task
+--> to avoid repetation of code
+--> return : to get the value outside of the function
+--> inside function paranthesis is called function parameters
+--> while calling function paranthesis inside value are arguments
+Example:
+//creating the function
+function ex(a){
+    console.log(a);
+}
+ex(2);//calling the function
+
+Task: 
+function ex(ar){
+    // console.log(ar.join(","));
+    for(var i=0;i<ar.length;i++){
+        console.log(ar[i]);
+    }
+}
+ex([2, 3, 4, 5]);
+
+Function types:
+
+1. Anonymous Fuction :
+Syntax : var funName = function(){return}
+//use case : mostly for if any events
+Example:
+var add = function(a, b){
+    	return a+b;
+	}
+console.log(add(3,8));
+
+2. Immediately Invoked function execution (IIFE):
+--> Immediately delete the values after using because it has 
+limited memory space.
+Syntax : (function funName(parameter){code})(arguments);
+Example:
+(function add(a,b){
+    console.log(a+b);
+})(5,8);
+
+3. Arrow function :
+--> Introduced in ES6 version
+--> To reduce code length
+Syntax : var variableName = (parameter) => {code};
+Example:
+var multi = (a,b) =>{
+    return a*b;
+}
+console.log(multi(6,7));
